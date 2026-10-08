@@ -1,0 +1,40 @@
+\documentclass{article}
+% My first document using a professionnal editor !
+
+\begin{document}
+\section{Introduction}\label{sec:intro}
+
+This is my first \LaTeX document with spaces test and.
+
+A new
+
+paragraph
+
+Today is \today.
+
+\section{Next section}\label{sec:nextSection}
+
+I am pointing section~\ref{sec:intro}
+
+% \include{test.tex}
+
+A list:
+\begin{enumerate}
+\item A first item
+  \begin{itemize}
+  \item[-] premier point
+  \item [-] deuxième point
+  \end{itemize}
+\item Anothe item
+\end{enumerate}
+
+
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    X & O & X
+  \end{tabular}
+\end{center}
+
+    
+
+\end{document}

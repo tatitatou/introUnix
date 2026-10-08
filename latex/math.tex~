@@ -1,0 +1,16 @@
+\documentclass{article}
+% document sur les formules mathématiques
+
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+
+Inlined formula:
+$$E = MC^{24}$$
+
+$$ a + \beta = 1 + \frac{\beta}{a} \text{ si } a \neq 0 $$
+
+
+
+
+\end{document}

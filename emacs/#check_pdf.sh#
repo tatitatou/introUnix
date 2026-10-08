@@ -1,0 +1,24 @@
+#!bin/bash
+
+if [ !# -ne 1 ]
+then
+    echo "Bad argument number"
+    exit -1
+fi
+
+REP="$1"
+
+if [ ! -d $1 ]
+then
+    echo "$REP not a directory or not existing"
+    exit -2
+fi
+
+OLDIFS=$"IFS"
+IFS='\n'
+for f in "*/*.pdf
+do
+    echo "$f"
+done
+
+IFS="$OLDIFS"

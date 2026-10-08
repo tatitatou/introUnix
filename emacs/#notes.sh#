@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [$# -ne 0]
+then
+    echo "Bad argument number"
+    exit -1
+fi
+
+DEST="my_notes_.csv"
+
+echo "Next:"
+read CHAINE
+while ["$CHAINE" != "q"]
+do
+    #NOM=$(echo $CHAINE | cut -d: -f1)
+    NOM=$(echo "$CHAINE" | awk -F":" '{print $1}')
+    #echo "$NOM"
+    NOTE=$(echo "CHAINE" | cut -d: -f2)
+    if [ "$NOTE" -ge 16]
+    then
+        echo "TB"
+        echo "$NOM:B" >> "$DEST"
+    else
+        echo "Peut mieux faire"
+        echo 
+    
+    echo ":Next"
+    read CHAINE
+done
+
